@@ -70,3 +70,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 <!-- I utilized the class review to help me along with this assignment. So thanks to Hexx -->
+====================
+Number and name of feature:  This is my second feature and the feature is to use JSON to display shtuff
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 9pm
+
+Finish time:
+
+Actual time needed to complete:
