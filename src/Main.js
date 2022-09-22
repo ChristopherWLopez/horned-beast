@@ -1,14 +1,15 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import data from './data.json';
 
 class Main extends React.Component {
   render() {
      return (
         <>
         <HornedBeast 
-        title={"UniWhal"}
-        description={"A unicorn and a narwhal nuzzling their horns"}
-        imageURL={"http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"}
+        title={data[0].title}
+        description={data[0].description}
+        imageURL={data[0].imageURL}
         />
         <HornedBeast
         title={"Unicorn Head"}
