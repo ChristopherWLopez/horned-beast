@@ -31,8 +31,10 @@ Actual time needed to complete: It took 2 hours, however i did get help with the
 
 Estimate of time needed to complete:  1hours
 
-Start time: 9pm
+Start time: 11am
 
-Finish time:
+Finish time: 12pm
 
-Actual time needed to complete:
+Actual time needed to complete: 12:40pm
+
+<!-- help from the code review -->
