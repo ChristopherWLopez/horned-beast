@@ -6,17 +6,15 @@ class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      favorites: 0
-
+      favorites: 0,
     }
   }
-
-  addFavorites = () => {
-    this.setState({ favorites: this.state.favorites + 1 });
-  }
+  
+  handleClick = () => {
+    this.setState({favorites: this.state.favorites+1})
+    }
   render() {
     return (
-
       <Container>
         <Card style={{ width: '18rem' }}>
           <Card.Body>
@@ -24,12 +22,14 @@ class HornedBeast extends React.Component {
             <Card.Text>{this.props.description}</Card.Text>
 
           </Card.Body>
-          <Card.Img variant="top" src={this.props.imageURL} alt={this.props.description} title={this.props.title}
-
-
+          <Card.Img 
+          variant="top" src={this.props.imageURL} 
+          alt={this.props.description} 
+          title={this.props.title}
+          onClick= {this.handleClick}
           />
           {/* <h2>{this.props.title}</h2> */}
-          <Card.Text>{this.state.favorites}</Card.Text>
+          <Card.Text>🫀:{this.state.favorites}</Card.Text>
           {/* <p>{this.props.description}</p> */}
         </Card>
       </Container>
