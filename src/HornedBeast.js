@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -15,7 +15,8 @@ class HornedBeast extends React.Component {
     }
   render() {
     return (
-      <Container>
+
+      <Col>
         <Card style={{ width: '18rem' }}>
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
@@ -32,7 +33,7 @@ class HornedBeast extends React.Component {
           <Card.Text>🫀:{this.state.favorites}</Card.Text>
           {/* <p>{this.props.description}</p> */}
         </Card>
-      </Container>
+      </Col>
     )
   }
 }
