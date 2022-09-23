@@ -23,7 +23,7 @@ Start time: 9am
 
 Finish time: 11am
 
-Actual time needed to complete: It took 2 hours, however i did get help with the code review. 
+Actual time needed to complete: It took 2 hours, however i did get help with the code review.
 
 ===
 
