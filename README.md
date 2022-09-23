@@ -17,13 +17,13 @@ Actual time needed to complete:
 
 ## Feature 2
 
-Estimate of time needed to complete:  1hours
+Estimate of time needed to complete:  1hour
 
-Start time: 9pm
+Start time: 9am
 
-Finish time:
+Finish time: 11am
 
-Actual time needed to complete:
+Actual time needed to complete: It took 2 hours, however i did get help with the code review. 
 
 ===
 
