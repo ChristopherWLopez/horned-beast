@@ -7,6 +7,18 @@ import Main from './Main';
 import Footer from './Footer';
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props); 
+      this.state = {
+        favorite : 0
+
+      }
+    }
+
+
+
+
   render() {
     return (
       <div className="App">
