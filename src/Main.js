@@ -1,17 +1,20 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-import data from './data.json';
 import Row from 'react-bootstrap/Row';
 
 class Main extends React.Component {
   render() {
      return (
         <>
-        <Row xs={1} md={1} lg={2}className="g-2">
-        {data.map(beast=> <HornedBeast
+        <Row xs={1} md={1} lg={2}>
+        {this.props.data.map(beast=> 
+        <HornedBeast
+          key={beast._id}
           title={beast.title}
           description={beast.description}
-          imageURL={ beast.imgURL}/>)}
+          imageURL={ beast.imgURL} 
+          handleOpen={this.props.handleOpen}
+          />)}
         </Row>
 
           {/* I used the video of Manuch figuring out how to do this */}

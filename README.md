@@ -38,3 +38,14 @@ Finish time: 12pm
 Actual time needed to complete: 12:40pm
 
 <!-- help from the code review -->
+===
+
+## Feature 4
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 4:30
+
+Finish time: 
+
+Actual time needed to complete: 
