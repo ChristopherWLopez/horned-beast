@@ -14,7 +14,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       show: false,
-      selectedBeast: {}
+      selectedBeast: {},
+      gallery: data
     }
   }
   handleClose = () => this.setState({ show: false });
@@ -25,14 +26,23 @@ class App extends React.Component {
     this.setState({ show: true, selectedBeast });
   }
 
+  upDateFilteredBeastArray = (numberedOfHorns) => {
+// itterate through data.json file to find all beasts whos horns property matches the number of horns we are filtering by.
+    let gallery = data;
+    if( numberedOfHorns){
+      gallery = data.filter( beastObj => beastObj.horns === numberedOfHorns);
+    }
+    this.setState({gallery:gallery})
+  }
 
   render() {
     return (
       <div className="App">
         <Header />
         <Main
-          data={data}
+          data={this.state.gallery}
           handleOpen={this.handleOpen}
+          upDateFilteredBeastArray={this.upDateFilteredBeastArray}
         />
         <SelectedBeast
           show={this.state.show}
