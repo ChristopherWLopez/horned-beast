@@ -1,11 +1,15 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import Row from 'react-bootstrap/Row';
+import FormFilter from './FormFilter';
 
 class Main extends React.Component {
   render() {
      return (
         <>
+        <FormFilter
+        upDateFilteredBeastArray={this.props.upDateFilteredBeastArray}
+        />
         <Row xs={1} md={1} lg={2}>
         {this.props.data.map(beast=> 
         <HornedBeast
