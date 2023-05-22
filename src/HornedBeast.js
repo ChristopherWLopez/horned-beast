@@ -17,8 +17,8 @@ class HornedBeast extends React.Component {
   render() {
     return (
 
-      <Col>
-        <Card style={{ width: '18rem' }}>
+      <Col className='cards'>
+        <Card style={{ width: '16rem' }}>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>{this.props.description}</Card.Text>
 
@@ -33,7 +33,7 @@ class HornedBeast extends React.Component {
           {/* <h2>{this.props.title}</h2> */}
           <Card.Text>🫀:{this.state.favorites}</Card.Text>
           <Button onClick={() => this.props.handleOpen(this.props.title)}>Expand</Button>
-          {/* <p>{this.props.description}</p> */}
+          <p>{this.props.description}</p>
           </Card.Body>
         </Card>
       </Col>
