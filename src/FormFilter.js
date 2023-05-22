@@ -9,12 +9,12 @@ class FormFilter extends React.Component {
     }
     render() {
         return (
-            <Form>
-                <Form.Label>
+            <Form className='form'>
+                <Form.Label className='formLabel'>
                     Horned Beast Filter.
                 </Form.Label>
-                <Form.Select onChange={this.handleFilter} aria-label="Default select example">
-                    <option value="0">All Beasts</option>
+                <Form.Select className='formSelect' onChange={this.handleFilter} aria-label="Default select example">
+                    <option className='allBeasts' value="0">All Beasts</option>
                     <option value="1">One Horns</option>
                     <option value="2">Two Horns</option>
                     <option value="3">Three Horns</option>
